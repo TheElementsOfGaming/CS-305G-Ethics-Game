@@ -1,0 +1,144 @@
+{
+    "start": {
+        "description": "The board is expecting a major feature to be released next week and dev notifies you that they don’t have time to implement it.",
+        "backgroundImage": "",
+        "choices": [
+            {
+                "choice": "Tell dev to try their best and notify the board that the deadline is in jeopardy.",
+                "outcome": "Dev ends up finding a solution just prior to the board meeting. The shareholders are pleasantly surprised.",
+                "reward": {
+                    "workerBacking": 1,
+                    "shareholderBacking": 2
+                },
+                "nextScenario": "theReleaseA"
+            },
+            {
+                "choice": "Tell dev this must happen by the deadline. Work nights if necessary.",
+                "outcome": "After a few long nights, the development team got that functionality out, despite their fatigue and sleep deprivation.",
+                "reward": {
+                    "workerBacking": -2,
+                    "shareholderBacking": 1
+                },
+                "nextScenario": "theReleaseB"
+            }
+        ]
+    },
+    "theReleaseA": {
+        "description": "The release with the latest code is launched, propelling your company ahead of competitors. But there's a problem: a bug was discovered internally that may have compromised site passwords.",
+        "backgroundImage": "",
+        "choices": [
+            {
+                "choice": "Silently fix the issue: no one has to know",
+                "outcome": "You don't hear about the defect for days, until an investigation finds your website to be the common denominator between the uptick in credit card theft.",
+                "reward": {
+                    "publicBacking": -2,
+                    "shareholderBacking": -2,
+                    "finance": -1
+                },
+                "nextScenario": ""
+            },
+            {
+                "choice": "Fix the issue, then bring it to the attention of your customers. They deserve to know.",
+                "outcome": "While the public is not happy their data was left insecure, they are glad it has been patched and grateful for the transparency. This publicity actually ended up making the company look good for its honesty.",
+                "reward": {
+                    "publicBacking": 1,
+                    "finance": 1
+                },
+                "nextScenario": ""
+            }
+        ]
+    },
+    "theReleaseB": {
+        "description": "The release with the latest code is launched, propelling your company ahead of competitors. With all of this data from new users, the board suggests to sell user data to the highest bidder for additional cash.",
+        "backgroundImage": "",
+        "choices": [
+            {
+                "choice": "Sell their data, get that moolah!",
+                "outcome": "You collect the user data and begin auctioning it off. It is quite lucrative and you are sitting on a ton of cash.",
+                "reward": {
+                    "finance": 2,
+                    "shareholderBacking": 1,
+                    "publicBacking": -1
+                },
+                "nextScenario": "competitorA"
+            },
+            {
+                "choice": "Keep user data private. There are many other ways to raise capital.",
+                "outcome": "You feel good that your users' data is secure, but you still have to figure out how to cover your bottom line.",
+                "reward": {
+                    "shareholderBacking": -1,
+                    "publicBacking": 1
+                },
+                "nextScenario": "competitorB"
+            }
+        ]
+    },
+    "competitorA": {
+        "description": "A competitor has just launched an ad campaign touting the security of their user data. The public then confronts your company about its lack of care for user privacy.",
+        "backgroundImage": "",
+        "choices": [
+            {
+                "choice": "Deny the allegations",
+                "outcome": "The public sniffs out your lie and begins flocking to your competitor.",
+                "reward": {
+                    "finance": -4,
+                    "shareholderBacking": -3,
+                    "publicBacking": -4
+                },
+                "nextScenario": ""
+            },
+            {
+                "choice": "Own up to it, promise you will do better to protect this info.",
+                "outcome": "You stop the bleeding by showing honesty, but people still prefer your competitor due to their policies.",
+                "reward": {
+                    "finance": -2,
+                    "shareholderBacking": -1,
+                    "publicBacking": -1
+                },
+                "nextScenario": ""
+            }
+        ]
+    },
+    "competitorB": {
+        "description": "Your competitor asks you if you would like to join them in their pledge to protect user privacy.",
+        "backgroundImage": "",
+        "choices": [
+            {
+                "choice": "Join the campaign, user privacy is of utmost importance.",
+                "outcome": "The public loves that social media companies are protecting their information and you attract nationwide attention. Advertisers don't like this idea, though.",
+                "reward": {
+                    "publicBacking": 2,
+                    "finance": -1
+                },
+                "nextScenario": ""
+            },
+            {
+                "choice": "Don't join their campaign, this may hurt advertisers' willingness to work with you.",
+                "outcome": "The public views your hesitancy to join the pledge as a sign you don't value user data. This bad press gets around to the advertisers as well.",
+                "reward": {
+                    "publicBacking": -1,
+                    "finance": -2
+                },
+                "nextScenario": ""
+            }
+        ]
+    },
+    "template": {
+        "description": "",
+        "backgroundImage": "",
+        "choices": [
+            {
+                "choice": "",
+                "outcome": "",
+                "reward": {},
+                "nextScenario": ""
+            },
+            {
+                "choice": "",
+                "outcome": "",
+                "reward": {},
+                "nextScenario": ""
+            }
+        ]
+    }
+}
