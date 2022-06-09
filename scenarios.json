@@ -35,7 +35,7 @@
                     "shareholderBacking": -2,
                     "finance": -1
                 },
-                "nextScenario": ""
+                "nextScenario": "competitorA"
             },
             {
                 "choice": "Fix the issue, then bring it to the attention of your customers. They deserve to know.",
@@ -44,7 +44,7 @@
                     "publicBacking": 1,
                     "finance": 1
                 },
-                "nextScenario": ""
+                "nextScenario": "competitorB"
             }
         ]
     },
@@ -60,7 +60,7 @@
                     "shareholderBacking": 1,
                     "publicBacking": -1
                 },
-                "nextScenario": "competitorA"
+                "nextScenario": ""
             },
             {
                 "choice": "Keep user data private. There are many other ways to raise capital.",
@@ -69,7 +69,7 @@
                     "shareholderBacking": -1,
                     "publicBacking": 1
                 },
-                "nextScenario": "competitorB"
+                "nextScenario": ""
             }
         ]
     },
