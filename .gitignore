@@ -1,3 +1,7 @@
-
 *.xml
+*.json
+*.pyc
+*.sqlite
+*.suo
+*.pyc
 *.iml
