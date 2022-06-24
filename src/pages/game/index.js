@@ -2,7 +2,7 @@ const { createApp } = Vue
 
 createApp({
     mounted() {
-        fetch('./scenarios.json')
+        fetch('../../data/scenarios.json')
             .then(response => response.json())
             .then(scenarios => {
                 this.scenarios = scenarios
