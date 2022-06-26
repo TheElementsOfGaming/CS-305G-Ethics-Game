@@ -15,7 +15,7 @@ body {
 .center {
     background-color: #fff;
     aspect-ratio: 9/16;
-    height: 100vh;
+    height: max(850px, 100vh);
     margin: auto;
 }
 
@@ -63,7 +63,8 @@ main p {
 main button {
     border-radius: 0;
     border: 1px solid black;
-    margin-top: 1.5%
+    margin-top: 1.5%;
+    background-color: #fff;
 }
 
 main button p {
