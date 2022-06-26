@@ -1,5 +1,4 @@
 *.xml
-*.json
 *.pyc
 *.sqlite
 *.suo
