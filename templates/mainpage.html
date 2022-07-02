@@ -1,0 +1,45 @@
+<!--This is where all of the HTML data for the video game itself will go--> 
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Essential Ethics</title>
+        <link rel="icon" type="image/x-icon" href="{% static 'images/PlaceholderIcon.ico' %}">
+        <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+    </head>
+
+    <body>
+        <div class="center">
+            <header>
+                <ul>
+                    <li><img src="{% static 'images/logoMobile.svg' %}" id="logo" width="400px"></li>
+                    <li><button onclick="location.href='/settings'" id="settings"><img src="{% static 'images/settingsIcon.svg' %}" alt="settings" width="40px"></button></li>
+                </ul>
+                
+                
+                <ul>
+                    <li>companyName</li>
+                    <li>CEO playerName</li>
+                </ul>
+                <h2>Resources</h2>
+                <ul>
+                    <li><img src="{% static 'images/shareholders.svg' %}" alt="Shareholders" width="100px"></li>
+                    <li><img src="{% static 'images/publicOpinion.svg' %}" alt="Public Opinion" width="100px"></li>
+                    <li><img src="{% static 'images/money.svg' %}" alt="money" width="100px"></li>
+                    <li><img src="{% static 'images/morale.svg' %}" alt="Morale" width="100px"></li>
+                </ul>
+            </header>
+            <main>
+                <img src="{% static 'images/cardBack.png' %}" class="cardImage">
+                <div id="cardInfo">
+                    <h3>Place the ethical dillema name here</h3>
+                    <p>Place the explanation of the ethical dillema here</p>
+                    <p><button type="button">You should do this</button></p>
+                    <p><button type="button">^Don't listen click this button instead</button></p>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!-- When going to the website, this is the homepage that will containing the buttons, start game, and settings-->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Essential Ethics</title>
+        <link rel="icon" type="image/x-icon" href="{% static 'images/PlaceholderIcon.ico' %}">
+        <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+    </head>
+
+    <body>
+        <div class="center">
+            <header>
+                <ul>
+                    <li><img src="{% static 'images/logoMobile.svg' %}" id="logo" width="400px"></li>
+                </ul>
+            </header>
+            <main class="center-children">
+                <button class="menu-button" onclick="location.href='/mainpage'" type="button">Play</button>
+                <button class="menu-button" onclick="location.href='/settings'" type="button">Settings</button>
+            </main>
+        </div>
+    </body>
+</html>
