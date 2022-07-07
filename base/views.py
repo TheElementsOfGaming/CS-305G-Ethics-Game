@@ -12,3 +12,6 @@ def settings(request):
 
 def mainpage(request):
 	return render(request, 'mainpage.html')
+
+def leaderboards(request):
+    return render(request, 'leaderboards.html')

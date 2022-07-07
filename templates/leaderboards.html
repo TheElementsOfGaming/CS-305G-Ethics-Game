@@ -1,4 +1,4 @@
-<!-- When going to the website, this is the homepage that will containing the buttons, start game, and settings-->
+<!--This is the settings page of our game. All we need is some basic settings-->
 
 {% load static %}
 
@@ -16,11 +16,9 @@
                 <ul>
                     <li><img src="{% static 'images/logoMobile.svg' %}" id="logo" width="400px"></li>
                 </ul>
+                <h2>Leaderboards</h2>
             </header>
-            <main class="center-children">
-                <button class="menu-button" onclick="location.href='/mainpage'" type="button">Play</button>
-                <button class ="menu-button" onclick="location.href='leaderboards'" type="button">Leaderboards</button>
-                <button class="menu-button" onclick="location.href='/settings'" type="button">Settings</button>
+            <main>
             </main>
         </div>
     </body>
