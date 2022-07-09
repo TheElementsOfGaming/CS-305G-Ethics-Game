@@ -1,0 +1,24 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 20px;
+    width: 40%;
+    margin: 5%;
+}
+
+#menu {
+    margin-left: 43px;
+    margin-right: 0px;
+    /* margin: 0px; */
+}
+
+#game {
+    margin-right: 43px;
+    margin-left: 0px;
+}
