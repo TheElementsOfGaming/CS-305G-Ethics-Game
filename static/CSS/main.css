@@ -34,6 +34,7 @@ body {
 #settings {
     border: none;
     background-color: inherit;
+    background-image: none;
     /* cursor: pointer; */
 }
 
@@ -94,7 +95,6 @@ main p {
 }
 
 main button {
-    border-radius: 0;
     border: 1px solid black;
     margin-top: 1.5%;
     background-color: #fff;
@@ -103,6 +103,13 @@ main button {
 main button p {
     font-size: 12px;
     padding: 0px 7%;
+}
+
+button {
+    color: white;
+    background: url("../images/buttonBackground.png") no-repeat center;
+    background-size: 110% 110%;
+    border-radius: 15px;
 }
 
 button:hover {
