@@ -4,22 +4,90 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Essential Ethics</title>
-        <link rel="icon" type="image/x-icon" href="{% static 'images/PlaceholderIcon.ico' %}">
-        <link href='{% static "/CSS/main.css" %}' rel='stylesheet' type='text/css'>
-    </head>
+  <head>
+    <title>Essential Ethics</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{% static 'images/PlaceholderIcon.ico' %}"
+    />
+    <link
+      href='{% static "/CSS/main.css" %}'
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href='{% static "/CSS/leaderboard.css" %}'
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
 
-    <body>
-        <div class="center">
-            <header>
-                <ul>
-                    <li><img src="{% static 'images/logoMobile.svg' %}" id="logo" width="400px"></li>
-                </ul>
-                <h2>Leaderboards</h2>
-            </header>
-            <main>
-            </main>
-        </div>
-    </body>
+  <body>
+    <div class="center">
+      <header>
+        <ul>
+          <li>
+            <img
+              src="{% static 'images/logoMobile.svg' %}"
+              id="logo"
+              width="400px"
+            />
+          </li>
+        </ul>
+        <h2>Leaderboard</h2>
+      </header>
+      <main>
+        <table id="scoreboard">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <!-- Use data to dynamically render this view. Just using it as a placeholder for styling -->
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mario Wannabe</td>
+              <td>9,998</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Ninja</td>
+              <td>9,997</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Auronplay</td>
+              <td>9,254</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Rubius</td>
+              <td>7,844</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>ibai</td>
+              <td>7,771</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Tfue</td>
+              <td>7,500</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>xQc</td>
+              <td>7,499</td>
+            </tr>
+          </tbody>
+        </table>
+        <button id="menu" onclick="location.href='/..'" type="button">Return to Main Menu</button>
+        <button id="game" onclick="location.href='/mainpage'" type="button">Return to Game</button>
+      </main>
+    </div>
+  </body>
 </html>

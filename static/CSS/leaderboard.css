@@ -1,0 +1,43 @@
+#scoreboard {
+  padding: 20px;
+  width: 100%;
+}
+
+#scoreboard th {
+  text-align: left;
+}
+
+#scoreboard th:last-child {
+  text-align: right;
+}
+
+#scoreboard td {
+  width: 45%;
+  text-align: left;
+}
+
+#scoreboard td:first-child {
+  width: 10%;
+}
+
+#scoreboard td:last-child {
+  text-align: right;
+}
+
+/* TODO: consolidate this and other uses into main.css */
+button {
+    padding: 20px;
+    width: 40%;
+    margin: 5%;
+}
+
+#menu {
+    margin-left: 43px;
+    margin-right: 0px;
+    /* margin: 0px; */
+}
+
+#game {
+    margin-right: 43px;
+    margin-left: 0px;
+}
