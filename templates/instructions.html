@@ -1,0 +1,44 @@
+<!-- This is the webpage the user goes to when clicking the main page to learn how to play the game -->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Essential Ethics</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/PlaceholderIcon.ico' %}">
+        <link href='{% static "/CSS/instructions.css" %}' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="center">
+        <header>
+                <ul>
+                    <li><img src="{% static 'images/logoMobile.svg' %}" id="logo" width="400px"></li>
+                </ul>
+
+                <h1>How to play</h1>
+
+            <article class="info">
+                <p class="page-1">
+                    Pretend you're the CEO of a brand new startup company
+                    named Essential Ethics. As the CEO you're required to
+                    make a lot of decisions that affect many different
+                    factors of the company you own and the people you
+                    employ. As you read through these instructions each
+                    of these different factors will be explained.
+                    Please remember your decisions
+                    affect your problems.
+                </p>
+            </article>
+            <main class="center-children">
+            <button class="menu-button" onclick="pageScroll()" type="button">next page</button>
+           <!-- <button class="menu-button" id="readyButton" onclick="location.href='/mainpage'" type="button">Ready?</button> -->
+            <button class="menu-button" onclick="location.href='/home'" type="button">Back to Main Menu</button>
+        </main>
+        </header>
+    </div>
+    <script>
+    </script>
+</body>
+</html>

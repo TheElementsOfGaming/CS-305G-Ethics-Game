@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 # Create your views here.
 
 
@@ -10,8 +11,14 @@ def home(request):
 def settings(request):
     return render(request, 'settings.html')
 
+
 def mainpage(request):
-	return render(request, 'mainpage.html')
+    return render(request, 'mainpage.html')
+
 
 def leaderboards(request):
     return render(request, 'leaderboards.html')
+
+
+def instructions(request):
+    return render(request, 'instructions.html')
