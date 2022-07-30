@@ -24,10 +24,30 @@
                 </ul>
                 <h2>Resources</h2>
                 <ul>
-                    <li><img src="{% static 'images/shareholders.svg' %}" alt="Shareholders" width="100px"></li>
-                    <li><img src="{% static 'images/publicOpinion.svg' %}" alt="Public Opinion" width="100px"></li>
-                    <li><img src="{% static 'images/money.svg' %}" alt="money" width="100px"></li>
-                    <li><img src="{% static 'images/morale.svg' %}" alt="Morale" width="100px"></li>
+                    <li>
+                        <figure>
+                            <img src="{% static 'images/shareholders.svg' %}" alt="Shareholders" width="100px">
+                            <figcaption class="score" id="shareholderScore">5/25</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="{% static 'images/publicOpinion.svg' %}" alt="Public Opinion" width="100px">
+                            <figcaption class="score" id="publicScore">10/25</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="{% static 'images/money.svg' %}" alt="money" width="100px">
+                            <figcaption class="score" id="moneyScore">15/25</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="{% static 'images/morale.svg' %}" alt="Morale" width="100px">
+                            <figcaption class="score" id="moraleScore">20/25</figcaption>
+                        </figure>
+                    </li>
                 </ul>
             </header>
             <main>
@@ -40,5 +60,7 @@
                 </div>
             </main>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
     </body>
 </html>
