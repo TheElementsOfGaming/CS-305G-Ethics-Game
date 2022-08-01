@@ -8,9 +8,32 @@
     <meta charset="UTF-8">
     <title>Essential Ethics</title>
     <link rel="icon" type="image/x-icon" href="{% static 'images/PlaceholderIcon.ico' %}">
-        <link href='{% static "/CSS/instructions.css" %}' rel='stylesheet' type='text/css'>
+    <link href='{% static "/CSS/instructions.css" %}' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        p {
+                font-size: 25px;
+                margin-top: 19%;
+                text-align: center;
+        }
+
+        button {
+            width: 100px;
+            height: 50px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        #play_button {
+            display: grid;
+            text-align: center;
+            width: 200px;
+            height: 50px;
+            margin: auto;
+            padding-top: 14px;
+        }
+    </style>
 </head>
-<body>
+<body style="text-align: center;">
     <div class="center">
         <header>
                 <ul>
@@ -18,27 +41,50 @@
                 </ul>
 
                 <h1>How to play</h1>
-
-            <article class="info">
-                <p class="page-1">
-                    Pretend you're the CEO of a brand new startup company
-                    named Essential Ethics. As the CEO you're required to
-                    make a lot of decisions that affect many different
-                    factors of the company you own and the people you
-                    employ. As you read through these instructions each
-                    of these different factors will be explained.
-                    Please remember your decisions
-                    affect your problems.
-                </p>
-            </article>
-            <main class="center-children">
-            <button class="menu-button" onclick="location.href='/mainpage'" type="button">Next Page</button>
-           <!-- <button class="menu-button" id="readyButton" onclick="location.href='/mainpage'" type="button">Ready?</button> -->
-            <button class="menu-button" onclick="location.href='/home'" type="button">Back to Main Menu</button>
-        </main>
         </header>
+
+        <p id="page_1" style="text-align: center; margin-top: 50px;">Welcome to Essential Ethics a CS305G Production. Today, you're going to pretend you're the CEO of a new start up company. 
+        With this assignment comes a multitude of different decisions and tasks that you will have to make in order to not only make sure your company thrives, but also to make sure that other parts of your life thrive too.</p>
+
+        <button id="forward" style="text-align: center;" type="button">Forward</button>
+        <button id="backward" style="display: none;" type="button">Backward</button>
+        <button onclick="location.href='/mainpage'" type="button" id="play_button">Play Game</button>
     </div>
-    <script>
-    </script>
 </body>
+
+    <script type="text/javascript">
+        document.getElementById("forward").onclick = function () {
+            var getPTagId = document.getElementsByTagName("p")[0].id;
+            var getPTag = document.getElementById(getPTagId);
+
+            if (getPTagId === "page_1") {
+                getPTag.innerText = "In this game as you make your decisions you'll have a different status bars that will change depending on those decisions. The first one is your shareholders. The second is the public's opinion on your company. The third is the amount of money you have. Then finally, the fourth is your employees morale. You'll want to try to keep all of these high up as you make your choices to receive a good score. Good luck and have fun!";
+                getPTag.id = "page_2";
+
+                document.getElementById("backward").style.display = "inline";
+                document.getElementById("forward").style.display = "none";
+            }
+        };
+
+        document.getElementById("backward").onclick = function () {
+            var getPTagId = document.getElementsByTagName("p")[0].id;
+            var getPTag = document.getElementById(getPTagId);
+
+            if(getPTagId === "page_3") {
+                getPTag.innerText = "In this game as you make your decisions you'll have a different status bars that will change depending on those decisions. The first one is your shareholders. The second is the public's opinion on your company. The third is the amount of money you have. Then finally, the fourth is the employee morale. You'll want to try to keep all of these high up as you make your choices to receive a good score. Good luck and have fun!";
+                getPTag.id = "page_2";
+
+                document.getElementById("forward").style.display = "inline"; 
+                document.getElementById("forward").style.display = "none";
+            }
+
+            if(getPTagId === "page_2") {
+                getPTag.innerText = "Welcome to Essential Ethics a CS305G Production. Today, you're going to pretend you're the CEO of a new start up company. With this assignment comes a multitude of different decisions and tasks that you will have to make in order to not only make sure your company thrives, but also to make sure that other parts of your life thrive too.";
+                getPTag.id = "page_1";
+
+                document.getElementById("backward").style.display = "none";
+                document.getElementById("forward").style.display = "inline";
+            }
+        };
+    </script>
 </html>

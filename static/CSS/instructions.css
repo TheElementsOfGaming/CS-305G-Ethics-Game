@@ -10,7 +10,7 @@ body {
 
 .center {
     background-color: #1f2621;
-    aspect-ratio: 9/16;
+    aspect-ratio: 9/15;
     height: 100%;
     /* height: max(850px, 100vh); */
     margin: auto;
