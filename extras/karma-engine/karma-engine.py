@@ -13,3 +13,15 @@ class Karmic:
 
     def returnKarma(self):
         return str(self.karma)
+
+        def returnOverall(self):
+        # Verify where you stand ethically, this can be modified accordingly
+        if self.karma < 0:
+            ethics = "Low Ethics"
+        elif self.karma < 5:
+            ethics = "Average Ethics"
+        elif self.karma > 5:
+            ethics = "High Ethics"
+        return ethics
+   
+        
